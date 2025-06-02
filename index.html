@@ -97,7 +97,7 @@
       function searchTrackNo() {
         const trackNo = document.getElementById("trackNo").value;
         const company = document.getElementById("company_selector").value;
-        if (/^[0-9]+/.test(trackNo)) {
+        if (/[0-9]{6,}/.test(trackNo)) {
           console.log(companyURL(company) + trackNo);
           location.href = companyURL(company) + trackNo;
         }
