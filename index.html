@@ -80,6 +80,7 @@
             <option value="jp">日本郵便</option>
             <option value="espo">エスポ便</option>
             <option value="4px">4PX</option>
+            <option value="17track">17Track</option>
             <option value="lp">AliExpress LP*</option>
             <option value="seino">西濃運輸</option>
           </select>
@@ -115,6 +116,8 @@
             return "https://www.console.espoirer.com/express-tracking?unknown=";
           case "4px":
             return "https://www.ship24.com/ja/tracking?a=982&p=";
+          case "17track":
+            return "https://m.17track.net/ja?v=2#nums=";
           case "lp":
             return "https://global.cainiao.com/newDetail.htm?mailNoList=";
           default:
